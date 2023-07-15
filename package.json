@@ -86,7 +86,6 @@
     "react-stylable-diff": "^2.0.0",
     "react-style-tag": "^3.0.0",
     "redux": "^4.2.0",
-    "reselect": "^4.1.8",
     "sass-loader": "^13.0.2",
     "showdown": "^2.1.0",
     "smoothscroll": "^0.4.0",
