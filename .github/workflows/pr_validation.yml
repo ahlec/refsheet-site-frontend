@@ -13,10 +13,13 @@ jobs:
         uses: actions/cache@v3
         with:
           path: node_modules
-          key: v1-${{ runner.os }}-${{ hashFiles('package-log.json') }}
+          key: v1-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            v1-${{ runner.os }}-
+            v1-
 
       - name: Install dependencies
         run: npm install
 
       - name: Ensure files are formatted with Prettier
-        run: npm run prettier . --check
+        run: npx prettier . --check
